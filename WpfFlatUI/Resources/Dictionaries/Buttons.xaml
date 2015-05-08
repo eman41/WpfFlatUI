@@ -7,8 +7,6 @@
         <Setter Property="HorizontalAlignment" Value="Right" />
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="Margin" Value="-30" />
-        <Setter Property="FontWeight" Value="Bold" />
-        
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -24,11 +22,11 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Foreground" Value="{StaticResource MidnightBlue}" />
+                            <Setter Property="Foreground" Value="{StaticResource ConcreteBrush}" />
                             <Setter Property="Background" Value="{StaticResource CloudsBrush}" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="False">
-                            <Setter Property="Foreground" Value="{StaticResource MidnightBlue}" />
+                            <Setter Property="Foreground" Value="{StaticResource SilverBrush}" />
                             <Setter Property="Background" Value="White" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">

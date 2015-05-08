@@ -35,7 +35,7 @@
                 <StackPanel Grid.Column="1" Width="175" HorizontalAlignment="Left">
                     <TextBlock Text="Tooltips" Style="{StaticResource Headers}" />
                     <uc:Tooltip TipText="Tooltip under the text"  />
-                    <uc:Tooltip TipText="Here is the sample of talltooltip that contains three lins or more. More." IsUnderText="False" Margin="0,15,0,0" />
+                    <uc:Tooltip TipText="Here is the sample of talltooltip that contains three lines or more." IsUnderText="False" Margin="0,15,0,0" />
                 </StackPanel>
                 <StackPanel Grid.Column="2" Width="265" HorizontalAlignment="Left">
                     <TextBlock Text="Text Box" Style="{StaticResource Headers}" />
