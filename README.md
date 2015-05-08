@@ -1,4 +1,4 @@
-# WpfFlatUI
-A flat UI demo in XAML and WPF. The end goal here is to have a flat/chrome-less wpf application starter.
+# WPF Flat UI
+A flat UI app shell developed using WPF. The end-goal is to produce a flat/chrome-less WPF start for desktop apps.
 
-Based on: http://designmodo.com/flat-free/
+Control styles based on: http://designmodo.com/flat-free/
