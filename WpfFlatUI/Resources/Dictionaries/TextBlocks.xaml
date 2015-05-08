@@ -1,0 +1,38 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Style x:Key="HeaderBase" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource MidnightBlue}" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontFamily" Value="./Resources/Fonts/#Lato" />
+        <Setter Property="TextOptions.TextFormattingMode" Value="Ideal" />
+        <Setter Property="TextOptions.TextRenderingMode" Value="ClearType" />
+        <Setter Property="TextOptions.TextHintingMode" Value="Fixed" />
+        <Setter Property="Margin" Value="0,0,0,12" />
+    </Style>
+
+    <Style x:Key="Headers" TargetType="TextBlock" BasedOn="{StaticResource HeaderBase}">
+        <Setter Property="FontSize" Value="17" />
+    </Style>
+
+    <Style x:Key="Header1" TargetType="TextBlock" BasedOn="{StaticResource HeaderBase}">
+        <Setter Property="FontSize" Value="30" />
+    </Style>
+
+    <Style x:Key="Header2" TargetType="TextBlock" BasedOn="{StaticResource HeaderBase}">
+        <Setter Property="FontSize" Value="24" />
+    </Style>
+
+    <Style x:Key="Header3" TargetType="TextBlock" BasedOn="{StaticResource HeaderBase}">
+        <Setter Property="FontSize" Value="22" />
+    </Style>
+
+    <Style x:Key="Header4" TargetType="TextBlock" BasedOn="{StaticResource HeaderBase}">
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+    
+    <Style x:Key="Header5" TargetType="TextBlock" BasedOn="{StaticResource HeaderBase}">
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+    
+</ResourceDictionary>

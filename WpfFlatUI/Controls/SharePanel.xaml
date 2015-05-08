@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="WpfFlatUI.Controls.SharePanel"
+             Name="uc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             
+             Height="165"
+             Width="185">
+    <Border Background="{StaticResource CloudsBrush}" CornerRadius="5">
+        <Grid>
+            <Path Width="19" Height="10" HorizontalAlignment="Left" VerticalAlignment="Top" Fill="{StaticResource CloudsBrush}"
+                  Data="M0,9 L9,0 18,9 Z" Margin="15,-7,0,0"/>
+            <StackPanel Margin="10">
+                <CheckBox VerticalAlignment="Center" HorizontalAlignment="Center"
+                             Margin="0,0,0,10"
+                             Style="{StaticResource OnOffRadioStyle}">Facebook</CheckBox>
+
+                <CheckBox VerticalAlignment="Center" HorizontalAlignment="Center"
+                             Margin="0,0,0,10" IsChecked="True"
+                             Style="{StaticResource OnOffRadioStyle}">Twitter</CheckBox>
+
+                <CheckBox VerticalAlignment="Center" HorizontalAlignment="Center"
+                             Margin="0,0,0,10"
+                             Style="{StaticResource OnOffRadioStyle}">Pinterest</CheckBox>
+            </StackPanel>
+            <Button Content="Share" Style="{StaticResource ShareButton}"
+                    Width="{Binding ElementName=uc, Path=Witdth}" VerticalAlignment="Bottom"/>
+        </Grid>
+    </Border>
+</UserControl>

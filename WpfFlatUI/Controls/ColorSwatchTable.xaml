@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="WpfFlatUI.Controls.ColorSwatchTable"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             
+             xmlns:uc="clr-namespace:WpfFlatUI.Controls"
+             FontFamily="./Resources/Fonts/#Lato"
+             Background="White"
+             mc:Ignorable="d">
+    <StackPanel>
+        
+        <TextBlock Text="Color Swatches" Style="{StaticResource Headers}" />
+        <Grid VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="105" />
+                <RowDefinition Height="105" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+                <ColumnDefinition Width="125" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Grid.Row="0">
+                <uc:ColorSwatch HexText="#1ABC9C" ColorDescription="TURQUOISE" />
+                <uc:ColorSwatch HexText="#16A085" ColorDescription="GREEN SEA" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Grid.Row="0">
+                <uc:ColorSwatch HexText="#2ECC71" ColorDescription="EMERALD" />
+                <uc:ColorSwatch HexText="#27AE60" ColorDescription="NEPHRITIS" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Grid.Row="0">
+                <uc:ColorSwatch HexText="#3498DB" ColorDescription="PETERMANN RIVER" FontSize="10" />
+                <uc:ColorSwatch HexText="#2980B9" ColorDescription="BELIZE HOLE" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="3" Grid.Row="0">
+                <uc:ColorSwatch HexText="#9B59B6" ColorDescription="AMETHYST" />
+                <uc:ColorSwatch HexText="#8E44AD" ColorDescription="WISTERIA" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="4" Grid.Row="0">
+                <uc:ColorSwatch HexText="#34495E" ColorDescription="WET ASPHALT" />
+                <uc:ColorSwatch HexText="#2C3E50" ColorDescription="MIDNIGHT BLUE" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="0" Grid.Row="1">
+                <uc:ColorSwatch HexText="#F1C40F" ColorDescription="SUN FLOWER" />
+                <uc:ColorSwatch HexText="#F39C12" ColorDescription="ORANGE" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="1" Grid.Row="1">
+                <uc:ColorSwatch HexText="#E67E22" ColorDescription="CARROT" />
+                <uc:ColorSwatch HexText="#D35400" ColorDescription="PUMPKIN" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Grid.Row="1">
+                <uc:ColorSwatch HexText="#E74C3C" ColorDescription="ALIZARIN"/>
+                <uc:ColorSwatch HexText="#C0392B" ColorDescription="POMEGRANATE" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="3" Grid.Row="1">
+                <uc:ColorSwatch HexText="#ECF0F1" ColorDescription="CLOUDS" Foreground="{StaticResource SilverBrush}" />
+                <uc:ColorSwatch HexText="#BDC3C7" ColorDescription="SILVER" />
+            </StackPanel>
+
+            <StackPanel Grid.Column="4" Grid.Row="1">
+                <uc:ColorSwatch HexText="#95A5A6" ColorDescription="CONCRETE" />
+                <uc:ColorSwatch HexText="#7F8C8D" ColorDescription="ASBESTOS" />
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</UserControl>

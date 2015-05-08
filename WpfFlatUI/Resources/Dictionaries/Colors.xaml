@@ -1,0 +1,53 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Color x:Key="Turquoise">#1ABC9C</Color>
+    <SolidColorBrush x:Key="TurquoiseBrush" Color="{StaticResource Turquoise}"/>
+    <Color x:Key="GreenSea">#16A085</Color>
+    <SolidColorBrush x:Key="GreenSeaBrush" Color="{StaticResource GreenSea}"/>
+
+    <Color x:Key="Emerald">#2ECC71</Color>
+    <SolidColorBrush x:Key="EmeraldBrush" Color="{StaticResource Emerald}"/>
+    <Color x:Key="Nephritis">#27AE60</Color>
+    <SolidColorBrush x:Key="NephritisBrush" Color="{StaticResource Nephritis}"/>
+
+    <Color x:Key="PetermannRiver">#3498DB</Color>
+    <SolidColorBrush x:Key="PetermannRiverBrush" Color="{StaticResource PetermannRiver}"/>
+    <Color x:Key="BelizeHole">#2980B9</Color>
+    <SolidColorBrush x:Key="BelizeHoleBrush" Color="{StaticResource BelizeHole}"/>
+
+    <Color x:Key="Amethyst">#9B59B6</Color>
+    <SolidColorBrush x:Key="AmethystBrush" Color="{StaticResource Amethyst}"/>
+    <Color x:Key="Wisteria">#8E44AD</Color>
+    <SolidColorBrush x:Key="WisteriaBrush" Color="{StaticResource Wisteria}"/>
+
+    <Color x:Key="WetAsphalt">#34495E</Color>
+    <SolidColorBrush x:Key="WetAsphaltBrush" Color="{StaticResource WetAsphalt}"/>
+    <Color x:Key="Midnight">#2C3E50</Color>
+    <SolidColorBrush x:Key="MidnightBlue" Color="{StaticResource Midnight}"/>
+
+    <Color x:Key="Sunflower">#F1C40F</Color>
+    <SolidColorBrush x:Key="SunflowerBrush" Color="{StaticResource Sunflower}"/>
+    <Color x:Key="Orange">#F39C12</Color>
+    <SolidColorBrush x:Key="OrangeBrush" Color="{StaticResource Orange}"/>
+
+    <Color x:Key="Carrot">#E67E22</Color>
+    <SolidColorBrush x:Key="CarrotBrush" Color="{StaticResource Carrot}"/>
+    <Color x:Key="Pumpkin">#D35400</Color>
+    <SolidColorBrush x:Key="PumpkinBrush" Color="{StaticResource Pumpkin}"/>
+
+    <Color x:Key="Alizarin">#E74C3C</Color>
+    <SolidColorBrush x:Key="AlizarinBrush" Color="{StaticResource Alizarin}"/>
+    <Color x:Key="Pomegranate">#C0392B</Color>
+    <SolidColorBrush x:Key="PomegranateBrush" Color="{StaticResource Pomegranate}"/>
+
+    <Color x:Key="Clouds">#ECF0F1</Color>
+    <SolidColorBrush x:Key="CloudsBrush" Color="{StaticResource Clouds}"/>
+    <Color x:Key="Silver">#BDC3C7</Color>
+    <SolidColorBrush x:Key="SilverBrush" Color="{StaticResource Silver}"/>
+
+    <Color x:Key="Concrete">#95A5A6</Color>
+    <SolidColorBrush x:Key="ConcreteBrush" Color="{StaticResource Concrete}"/>
+    <Color x:Key="Asbestos">#7F8C8D</Color>
+    <SolidColorBrush x:Key="AsbestosBrush" Color="{StaticResource Asbestos}"/>
+</ResourceDictionary>
