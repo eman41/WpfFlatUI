@@ -11,6 +11,7 @@
                 <ResourceDictionary Source="Resources/Dictionaries/TextBlocks.xaml" />
                 <ResourceDictionary Source="Resources/Dictionaries/Radios.xaml" />
                 <ResourceDictionary Source="Resources/Dictionaries/Buttons.xaml" />
+                <ResourceDictionary Source="Resources/Dictionaries/Windows.xaml" />
                 <ResourceDictionary Source="Resources/Dictionaries/DocumentTags.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

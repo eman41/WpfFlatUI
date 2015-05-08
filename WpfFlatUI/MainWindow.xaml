@@ -1,73 +1,69 @@
 ﻿<Window x:Class="WpfFlatUI.MainWindow"
+        Name="window"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:uc="clr-namespace:WpfFlatUI.Controls"
-        Title="MainWindow" 
-        MinHeight="600" Height="600"
-        MinWidth="1000" Width="1000" 
-        Foreground="{StaticResource MidnightBlue}"
-        TextOptions.TextFormattingMode="Display"
-        TextOptions.TextRenderingMode="ClearType"
-        
         MouseDown="Window_MouseDown"
-        AllowsTransparency="False"
-        
-        WindowStyle="None"
-        ResizeMode="CanResizeWithGrip"
-        WindowStartupLocation="CenterScreen">
-    <Grid Margin="30">
-        <Button Content="×" Style="{StaticResource WindowClose}" Click="OnClose_Click"
-                Margin="-30" />
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="205" />
-                    <ColumnDefinition Width="190" />
-                    <ColumnDefinition Width="280" />
-                    <ColumnDefinition Width="195" />
-                </Grid.ColumnDefinitions>
-                <StackPanel Grid.Column="0" Width="190" HorizontalAlignment="Left">
-                    <TextBlock Text="Share" Style="{StaticResource Headers}" />
-                    <uc:SharePanel />
-                </StackPanel>
-                <StackPanel Grid.Column="1" Width="175" HorizontalAlignment="Left">
-                    <TextBlock Text="Tooltips" Style="{StaticResource Headers}" />
-                    <uc:Tooltip TipText="Tooltip under the text"  />
-                    <uc:Tooltip TipText="Here is the sample of talltooltip that contains three lines or more." IsUnderText="False" Margin="0,15,0,0" />
-                </StackPanel>
-                <StackPanel Grid.Column="2" Width="265" HorizontalAlignment="Left">
-                    <TextBlock Text="Text Box" Style="{StaticResource Headers}" />
-                    <FlowDocumentScrollViewer Style="{StaticResource TextBoxViewer}">
-                        <FlowDocument Style="{StaticResource TextBoxDoc}">
-                            <Paragraph Style="{StaticResource TextBoxPara}">
-                                <Bold>Lato</Bold> is a free web-font designed by
-                                <Bold>Lukasz Dziedzic</Bold> from Warsaw.
-                            </Paragraph>
-                            <Paragraph Style="{StaticResource TextBoxPara}">
-                                Here you can feel the color, size, line height and margins between paragrapgs. Don't forget to underline your links, they are an important
-                                <Underline Style="{StaticResource LinkUnderline}">visual marker</Underline>  for user.
-                            </Paragraph>
-                            <Paragraph Style="{StaticResource TextBoxPara}">
-                                Also, to attract attention you can mark some import words using
-                                <Bold>bold weights</Bold> .
-                            </Paragraph>
-                        </FlowDocument>
-                    </FlowDocumentScrollViewer>
-                </StackPanel>
-                <StackPanel Grid.Column="3" Width="165">
-                    <TextBlock Text="Headers" Style="{StaticResource Headers}" />
-                    <TextBlock Text="Header 1" Style="{StaticResource Header1}" />
-                    <TextBlock Text="Header 2" Style="{StaticResource Header2}" />
-                    <TextBlock Text="Header 3" Style="{StaticResource Header3}" />
-                    <TextBlock Text="Header 4" Style="{StaticResource Header4}" />
-                    <TextBlock Text="HEADER 5" Style="{StaticResource Header5}" />
-                </StackPanel>
+        Style="{StaticResource FlatWindow}">
+    
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static ApplicationCommands.Close}"
+                        Executed="OnCloseCommand"/>
+    </Window.CommandBindings>
+    <Border Style="{StaticResource ProxyBorder}">
+        <Grid WindowChrome.IsHitTestVisibleInChrome="True">
+            <Button Content="×" Style="{StaticResource WindowClose}" />
+            <Grid Margin="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="230" />
+                    <RowDefinition Height="250" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="205" />
+                        <ColumnDefinition Width="190" />
+                        <ColumnDefinition Width="280" />
+                        <ColumnDefinition Width="195" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Width="190" HorizontalAlignment="Left">
+                        <TextBlock Text="Share" Style="{StaticResource Headers}" />
+                        <uc:SharePanel />
+                    </StackPanel>
+                    <StackPanel Grid.Column="1" Width="175" HorizontalAlignment="Left">
+                        <TextBlock Text="Tooltips" Style="{StaticResource Headers}" />
+                        <uc:Tooltip TipText="Tooltip under the text"  />
+                        <uc:Tooltip TipText="Here is the sample of talltooltip that contains three lines or more." IsUnderText="False" Margin="0,15,0,0" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="2" Width="265" HorizontalAlignment="Left">
+                        <TextBlock Text="Text Box" Style="{StaticResource Headers}" />
+                        <FlowDocumentScrollViewer Style="{StaticResource TextBoxViewer}">
+                            <FlowDocument Style="{StaticResource TextBoxDoc}">
+                                <Paragraph Style="{StaticResource TextBoxPara}">
+                                    <Bold>Lato</Bold> is a free web-font designed by
+                                    <Bold>Lukasz Dziedzic</Bold> from Warsaw.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource TextBoxPara}">
+                                    Here you can feel the color, size, line height and margins between paragrapgs. Don't forget to underline your links, they are an important
+                                    <Underline Style="{StaticResource LinkUnderline}">visual marker</Underline> for user.
+                                </Paragraph>
+                                <Paragraph Style="{StaticResource TextBoxPara}">
+                                    Also, to attract attention you can mark some import words using
+                                    <Bold>bold weights</Bold> .
+                                </Paragraph>
+                            </FlowDocument>
+                        </FlowDocumentScrollViewer>
+                    </StackPanel>
+                    <StackPanel Grid.Column="3" Width="165">
+                        <TextBlock Text="Headers" Style="{StaticResource Headers}" />
+                        <TextBlock Text="Header 1" Style="{StaticResource Header1}" />
+                        <TextBlock Text="Header 2" Style="{StaticResource Header2}" />
+                        <TextBlock Text="Header 3" Style="{StaticResource Header3}" />
+                        <TextBlock Text="Header 4" Style="{StaticResource Header4}" />
+                        <TextBlock Text="HEADER 5" Style="{StaticResource Header5}" />
+                    </StackPanel>
+                </Grid>
+                <uc:ColorSwatchTable Grid.Row="1" />
             </Grid>
-            <uc:ColorSwatchTable Grid.Row="1" />
         </Grid>
-    </Grid>
+    </Border>
 </Window>

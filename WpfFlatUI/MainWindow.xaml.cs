@@ -12,20 +12,16 @@ namespace WpfFlatUI
         public MainWindow()
         {
             InitializeComponent();
-
-            WindowChrome chrome = new WindowChrome();
-            chrome.CaptionHeight = 0.0;
-            WindowChrome.SetWindowChrome(this, chrome);
         }
 
-        private void OnClose_Click(object sender, RoutedEventArgs e)
+        private void OnCloseCommand(object sender, ExecutedRoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.Close();
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            this.DragMove();
+            DragMove();
         }
     }
 }
